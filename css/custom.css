@@ -1,5 +1,4 @@
 .app {
-	min-height:100%;
     background: -webkit-linear-gradient(bottom,#e8ecff, #001685) !important; /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom,#e8ecff, #001685) !important; /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom,#e8ecff, #001685) !important; /* For Firefox 3.6 to 15 */
@@ -23,16 +22,16 @@ html,body{
 		min-width:512px
 	}
 }
-
+.page-container{
+		min-height:70%
+	}
 @media only screen and (min-width:993px){
 	.page-container{
-		width: 68rem;
+		width: 65rem;
 		margin: 1rem auto;
 		box-shadow: black 0 0 1rem;
 	}
 }
-
-
 
 .slider .ng-enter, 
 .slider .ng-leave
@@ -54,4 +53,12 @@ html,body{
 	width: 655px;
 	display: inline-block;
 	position: absolute;
+}
+
+footer > div {
+	margin:auto;
+	max-width:65rem;
+}
+a{
+	text-decoration:none;
 }
