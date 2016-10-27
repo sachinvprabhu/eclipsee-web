@@ -1,0 +1,50 @@
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="css/w3.css" rel="stylesheet">
+		<link href="css/w3-theme.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+		
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-animate.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/loading-bar.min.js"></script>
+		
+		<script src="angular-config.js"></script>
+		<script src="js/angular-filters.js"></script>
+		
+	</head>
+	<body onload="org.vits.bootstrap()">
+		<div class="w3-theme-l3 app">
+			<div class="w3-theme-light w3-padding w3-row">
+				
+				<div class="w3-xxlarge w3-text-orange w3-col l5 title">
+					Eclipse Data solutions
+				</div>
+				<div class="w3-col l7">
+					<div class="w3-theme-light w3-row">
+						<div class="w3-col s6 m3 w3-padding">
+							<a class="w3-btn w3-theme-l3 full-width" href="#/">HOME</a>
+						</div>
+						<div class="w3-col s6 m3 w3-padding">
+							<a class="w3-btn w3-theme-l3 full-width" href="#/about">ABOUT</a>
+						</div>
+						<div class="w3-col s6 m3 w3-padding">
+							<a class="w3-btn w3-theme-l3 full-width" href="#/services">SERVICES</a>
+						</div>
+						<div class="w3-col s6 m3 w3-padding">
+							<a class="w3-btn w3-theme-l3 full-width" href="#/clients">CLIENTS</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div ng-view ng-controller="rootAppController" class="page-container">
+				
+			</div>
+		</div>
+	</body>
+</html>

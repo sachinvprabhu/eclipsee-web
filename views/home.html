@@ -1,0 +1,46 @@
+<div class="w3-row">
+	<div class="w3-col m8 w3-padding">
+		<div class="w3-blue" style="min-height:15rem;">
+			<div class="slider" style="height: 170px;" ng-switch on="article">
+				<div ng-switch-when="2">
+					Test 2
+				</div>
+				<div ng-switch-when="3">
+					Test 3
+				</div>
+				<div ng-switch-when="4">
+					Test 4
+				</div>
+				<div ng-switch-default>
+					Test 1
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w3-col m4">
+		<div class="w3-padding">
+			<div class="w3-card-8 w3-padding w3-yellow w3-large w3-border" ng-click="article = '1';">
+				PLANNING
+				<i class="w3-right fa fa-caret-right w3-xlarge"></i>
+			</div>
+		</div>
+		<div class="w3-padding">
+			<div class="w3-card-8 w3-padding w3-green w3-large w3-border" ng-click="article = '2';">
+				STRATEGY
+				<i class="w3-right fa fa-caret-right w3-xlarge"></i>
+			</div>
+		</div>
+		<div class="w3-padding">
+			<div class="w3-card-8 w3-padding w3-blue w3-large w3-border" ng-click="article = '3';">
+				RESULTS
+				<i class="w3-right fa fa-caret-right w3-xlarge"></i>
+			</div>
+		</div>
+		<div class="w3-padding">
+			<div class="w3-card-8 w3-padding w3-blue w3-border">
+				If you want to grow your business and take it to the next level,
+				Look no further than Eclipsee Data Solutions
+			</div>
+		</div>
+	</div>
+</div>
