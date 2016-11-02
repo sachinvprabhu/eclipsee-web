@@ -18,7 +18,7 @@ org={
 }
 
 org.vits.eclipsee.app.controller("rootAppController",function($scope,$location,$http){
-	
+	$scope.location = $location;
 });
 org.vits.eclipsee.app.config(['$routeProvider',
 	function($routeProvider) {

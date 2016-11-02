@@ -19,7 +19,7 @@
 		
 	</head>
 	<body onload="org.vits.bootstrap()">
-		<div class="w3-theme-l3 app">
+		<div class="w3-theme-l3 app" ng-controller="rootAppController">
 			<div class="w3-theme-light w3-padding w3-row">
 				<div class="w3-xxlarge w3-text-orange w3-col l5 title">
 					Eclipsee Data solutions
@@ -27,21 +27,21 @@
 				<div class="w3-col l7 nav-bar">
 					<div class="w3-theme-light w3-row">
 						<div class="w3-col s6 m3 w3-padding">
-							<a class="w3-btn w3-theme-l3 full-width" href="#/">HOME</a>
+							<a class="w3-btn w3-theme-l3 full-width {{(location.path()!='/')?'nav-btn':'nav-btn-selected'}}" href="#/">HOME</a>
 						</div>
 						<div class="w3-col s6 m3 w3-padding">
-							<a class="w3-btn w3-theme-l3 full-width" href="#/about">ABOUT</a>
+							<a class="w3-btn w3-theme-l3 full-width {{(location.path()!='/about')?'nav-btn':'nav-btn-selected'}}" href="#/about">ABOUT</a>
 						</div>
 						<div class="w3-col s6 m3 w3-padding">
-							<a class="w3-btn w3-theme-l3 full-width" href="#/services">SERVICES</a>
+							<a class="w3-btn w3-theme-l3 full-width {{(location.path()!='/services')?'nav-btn':'nav-btn-selected'}}" href="#/services">SERVICES</a>
 						</div>
 						<div class="w3-col s6 m3 w3-padding">
-							<a class="w3-btn w3-theme-l3 full-width" href="#/clients">CLIENTS</a>
+							<a class="w3-btn w3-theme-l3 full-width {{(location.path()!='/clients')?'nav-btn':'nav-btn-selected'}}" href="#/clients">CLIENTS</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div ng-view ng-controller="rootAppController" class="page-container">
+			<div ng-view class="page-container">
 			</div>
 		<footer style="background: -webkit-linear-gradient(top,#2e2cff, black);">
 			<div class="w3-row">

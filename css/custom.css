@@ -1,5 +1,8 @@
-.nav-bar .w3-btn{
+.nav-btn{
 	background: -webkit-linear-gradient(top,#a2afec, #001685) !important;
+}
+.nav-btn-selected{
+	background: -webkit-linear-gradient(top,#c9d3ff, #6b83fd) !important;
 }
 
 .app {
@@ -59,9 +62,9 @@ html,body{
 .slider .ng-leave.ng-leave-active{ left:-100% }
 .slider { position: relative; }
 .slider > div {
-	width: 655px;
+	
 	display: inline-block;
-	position: absolute;
+	position: inherit;
 }
 
 footer > div {
